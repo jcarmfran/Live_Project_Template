@@ -24,8 +24,7 @@ class DataTransformation:
 
     def get_data_transformer_object(self):
         '''
-        This function si responsible for data trnasformation
-        
+        This function is responsible for data transformation.
         '''
         try:
             numerical_columns = ["writing_score", "reading_score"]
@@ -64,8 +63,6 @@ class DataTransformation:
                 ("cat_pipelines",cat_pipeline,categorical_columns)
 
                 ]
-
-
             )
 
             return preprocessor
